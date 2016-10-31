@@ -19,6 +19,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+
+import fallentaiyoko.easymachines.proxy.*;
 /**
  *
  * @author sarah
@@ -29,8 +31,8 @@ public class EMMain {
     public static final String MODID = "easymachines";
     public static final String VERSION = "0.0.1a";
     public static final String NAME = "Easy Machines";
-    public static final String SERVER_PROXY = "fallentaiyoko.easymachines.ServerProxy";
-    public static final String CLIENT_PROXY = "fallentaiyoko.easymachines.ClientProxy";
+    public static final String SERVER_PROXY = "fallentaiyoko.easymachines.proxy.ServerProxy";
+    public static final String CLIENT_PROXY = "fallentaiyoko.easymachines.proxy.ClientProxy";
     
     private File config;
     private String configDir;
@@ -42,7 +44,7 @@ public class EMMain {
     public static Logger logger;
     
     @SidedProxy(clientSide = EMMain.CLIENT_PROXY, serverSide = EMMain.SERVER_PROXY)
-    //private static ServerProxy proxy;
+    private static ServerProxy proxy;
     
     public static final CreativeTabs tabEMBlocks = new CreativeTabs("EMBlocks") {
         @Override
