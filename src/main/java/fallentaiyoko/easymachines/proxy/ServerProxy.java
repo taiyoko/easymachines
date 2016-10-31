@@ -18,13 +18,12 @@ public class ServerProxy {
     public void preInit(FMLPreInitializationEvent e) {
         File directory = e.getModConfigurationDirectory();
         config = new Configuration(new File(directory.getPath(), "easymachines.cfg"));
-        Config.readConfig();
+        //config.readConfig();
         
         //Initialize blocks and items here.
-        EMBlocks.init();
-        EMItems.init();
+        //EMBlocks.init();
+        //EMItems.init();
         
-        MainCompatHandler.registerWaila();
     }
     
     public void init(FMLInitializationEvent e) {

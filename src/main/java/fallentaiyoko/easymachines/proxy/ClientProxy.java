@@ -1,7 +1,7 @@
 package fallentaiyoko.easymachines.proxy;
 
-import fallentaiyoko.easymachines.EMBlocks;
-import fallentaiyoko.easymachines.EMItems;
+//import fallentaiyoko.easymachines.EMBlocks;
+//import fallentaiyoko.easymachines.EMItems;
 import fallentaiyoko.easymachines.EMMain;
 import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -15,8 +15,8 @@ public class ClientProxy extends ServerProxy {
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
         
-        EMBlocks.initModels();
-        EMItems.initModels();
+        //EMBlocks.initModels();
+        //EMItems.initModels();
     }
     
     @Override
@@ -24,6 +24,6 @@ public class ClientProxy extends ServerProxy {
         super.init(e);
         
         //Do I need this?
-        EMBlocks.initItemModels();
+       // EMBlocks.initItemModels();
     }
 }

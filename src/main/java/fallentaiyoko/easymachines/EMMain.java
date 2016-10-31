@@ -42,7 +42,7 @@ public class EMMain {
     public static Logger logger;
     
     @SidedProxy(clientSide = EMMain.CLIENT_PROXY, serverSide = EMMain.SERVER_PROXY)
-    private static ServerProxy proxy;
+    //private static ServerProxy proxy;
     
     public static final CreativeTabs tabEMBlocks = new CreativeTabs("EMBlocks") {
         @Override

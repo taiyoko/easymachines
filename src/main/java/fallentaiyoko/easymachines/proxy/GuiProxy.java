@@ -13,9 +13,9 @@ public class GuiProxy implements IGuiHandler {
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         BlockPos pos = new BlockPos(x,y,z);
         TileEntity te = world.getTileEntity(pos);
-        if (te instanceof EMTileEntity) {
+        /*if (te instanceof EMTileEntity) {
             return null; //todo: actual entity stuff goes on here!
-        }
+        } */
         return null;
     }
     
@@ -23,9 +23,9 @@ public class GuiProxy implements IGuiHandler {
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         BlockPos pos = new BlockPos(x,y,z);
         TileEntity te = world.getTileEntity(pos);
-        if (te instanceof EMTileEntity) {
+        /*if (te instanceof EMTileEntity) {
             return null; //todo: return a gui!
-        }
+        }*/
         return null;
     }
     
